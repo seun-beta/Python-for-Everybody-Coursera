@@ -33,4 +33,4 @@ while True :
         points = 0
     number_of_courses = number_of_courses + 1
     GPA = (points*unit)/ number_of_courses
-print ('Your GPA is',GPA)
+print ('Your GPA is',CGPA)
