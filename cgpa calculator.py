@@ -1,6 +1,8 @@
 number_of_courses = 0
 print ('Welcome to this cgpa calculator')
 print ('''Type 'done' to end this calculator''')
+previous_CGPA  =  float (input('Input your previous CGPA else input zero'))
+previous_unit  =  float (input('Input your previous units else input zero'))
 while True :
     grade = (input('Please input your score for the course: '))
     unit= (input('Please input the units of this course '))
@@ -32,5 +34,5 @@ while True :
     else :
         points = 0
     number_of_courses = number_of_courses + 1
-    GPA = (points*unit)/ number_of_courses
+    GPA = (previous_CGPA * previous_unit)+((points*unit)/ number_of_courses)
 print ('Your CGPA is',GPA)
